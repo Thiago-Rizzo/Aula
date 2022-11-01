@@ -11,9 +11,9 @@ public class Pessoa {
         return this.name;
     }
 
-    public void chama(Animal animal) {
-        System.out.println(this.getName() + " chamou " + animal.getName());
-        animal.run();
+    public void chama(Locomovivel locomovivel) {
+        System.out.println(this.getName() + " chamou " + locomovivel.getName());
+        locomovivel.locomover();
         System.out.println("--------------------------------------------------");
     }
 }

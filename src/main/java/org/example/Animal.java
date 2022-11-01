@@ -10,6 +10,4 @@ public abstract class Animal {
     public String getName() {
         return this.name;
     }
-
-    public void run() {}
 }

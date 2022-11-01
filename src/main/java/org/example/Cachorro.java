@@ -1,13 +1,12 @@
 package org.example;
 
-public class Cachorro extends Animal{
-
+public class Cachorro extends Animal implements Locomovivel {
     public Cachorro(String name) {
         super(name);
     }
 
     @Override
-    public void run() {
+    public void locomover() {
         System.out.println(this.getName() + " corre abanando o rabo.");
     }
 }
