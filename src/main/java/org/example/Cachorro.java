@@ -1,9 +1,15 @@
 package org.example;
 
-public class Cachorro extends Animal{
+public class Cachorro implements Animal {
+    private final String name;
 
     public Cachorro(String name) {
-        super(name);
+        this.name = name;
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     @Override

@@ -1,15 +1,7 @@
 package org.example;
 
-public abstract class Animal {
-    private final String name;
+public interface Animal {
+    String getName();
 
-    public Animal(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void run() {}
+    void run();
 }
